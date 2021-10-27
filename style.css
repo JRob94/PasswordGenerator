@@ -1,0 +1,76 @@
+/* Star Selector (Selects every element in the HTML file) */
+* {
+    /* Includes Padding and border when setting a width or height for an element */
+    box-sizing: border-box;
+}
+body {
+    background-color: #0275ff;
+    color: #eef1ef;
+    font-family: 'Open Sans', sans-serif;
+    /* Flexbox is used to center the div with the id of container vertically and horizontally  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting the height to 100vh so the div will be centered vertically  */
+    height: 100vh;
+    /* Adding padding to the body element so the container is not right up against the edge of the viewport on smaller screen sizes */
+    padding: 25px;
+}
+
+h2 {
+    /* Top right/left bottom*/
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0275ff;
+    /* Buttons do not inherit text color. Must apply a new text color directly  */
+    border: none;
+    color: #eef1ef;
+    /* Changes the cursor when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: #443850;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* Top Right Bottom Left */
+    padding: 10px 5px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clipboard {
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* Changes font size of generated password for smaller screen sizes */
+@media (max-width: 400px){
+    #result-container {
+        font-size: 14px;
+    }
+}
