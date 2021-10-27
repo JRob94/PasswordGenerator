@@ -36,3 +36,11 @@ function getRandomSymbol(){
     return symbols[randomIndex(symbols)];
 }
 
+
+// Object to store all the character generator functions
+const randomFunctions = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
+};
